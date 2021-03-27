@@ -1,3 +1,17 @@
+// ************Задача 12 - 3 
+// Задача. Подсчёт свойств
+// function countProps(object) {
+//   let propCount = 0;
+//   // Пиши код ниже этой строки
+//   const keys = Object.keys(object);
+//   for (const key of keys){
+// if (object.hasOwnProperty(key)){
+// propCount+=1}}
+//   // Пиши код выше этой строки
+//   return propCount;
+// }
+
+
 // ************Задача 18 - 3 
 // (Задача. Поиск объекта по значению свойства)
 // const products = [
