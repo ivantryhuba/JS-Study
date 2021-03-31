@@ -10,6 +10,79 @@
 //   // Пиши код выше этой строки
 //   return propCount;
 // }
+// console.log(countProps({ name: 'Радар', price: 1300, quantity: 4, },))
+
+
+// ************Задача 13 - 3 
+// Метод Object.keys()
+// const apartment = {
+//   descr: 'Просторная квартира в центре',
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Пиши код ниже этой строки
+// const keys = Object.keys(apartment);
+// for (const key of keys) {
+// values.push(apartment[key])
+// }
+// console.log(keys)
+// console.log(values)
+
+
+// ************Задача 14 - 3 
+// Задача. Подсчёт свойств 2.0
+// function countProps(object) {
+//   // Пиши код ниже этой строки
+//   let propCount = 0;
+//   propCount = Object.keys(object).length;
+//   return propCount;
+//   // Пиши код выше этой строки
+// }
+
+
+// ************Задача 15 - 3 
+// Метод Object.values()
+// const apartment = {
+//   descr: 'Просторная квартира в центре',
+//   rating: 4,
+//   price: 2153,
+// };
+// // Пиши код ниже этой строки
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+// ************Задача 16 - 3 
+// Задача. Расходы на зарплату
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Пиши код ниже этой строки
+// const salaryArray = Object.values(salaries)
+// for (const salary of salaryArray){
+//   totalSalary+=salary;
+// }
+//   // Пиши код выше этой строки
+//   return totalSalary;
+// }
+
+
+// ************Задача 17 - 3 
+// Массив объектов
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+// const hexColors = [];
+// const rgbColors = [];
+// // Пиши код ниже этой строки
+// for (color of colors){
+// hexColors.push(color.hex);
+// rgbColors.push(color.rgb);
+// }
+// console.log(hexColors);
+// console.log(rgbColors);
 
 
 // ************Задача 18 - 3 
@@ -30,6 +103,7 @@
 //   return null;  
 //   // Пиши код выше этой строки
 // }
+// console.log(getProductPrice('Радар'))
 
 // ************Задача 19 - 3 
 // Коллекция значений свойства
@@ -68,6 +142,7 @@
 //   return totalPrice;
 //   // Пиши код выше этой строки
 // }
+// console.log(calculateTotalPrice('Радар'));
 
 
 // ************Задача 21 - 3 
@@ -108,9 +183,9 @@
 // ************Задача 23 - 3 
 // Изменение имени переменной
 // const highTemperatures = {
-//   yesterday: 28,
-//   today: 26,
-//   tomorrow: 33,
+  // yesterday: 28,
+  // today: 26,
+  // tomorrow: 33,
 // };
 // // Пиши код ниже этой строки
 // const {yesterday:highYesterday,
