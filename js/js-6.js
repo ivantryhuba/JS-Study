@@ -685,14 +685,242 @@
 
 // ************Задача 31 - 6
 // Метод reduce() и массив объектов
-const players = [
-  { name: 'Манго', playtime: 1270, gamesPlayed: 4 },
-  { name: 'Поли', playtime: 469, gamesPlayed: 2 },
-  { name: 'Аякс', playtime: 690, gamesPlayed: 3 },
-  { name: 'Киви', playtime: 241, gamesPlayed: 1 },
-];
+// const players = [
+//   { name: "Манго", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Поли", playtime: 469, gamesPlayed: 2 },
+//   { name: "Аякс", playtime: 690, gamesPlayed: 3 },
+//   { name: "Киви", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Пиши код ниже этой строки
+// const totalAveragePlaytimePerGame = players.reduce(
+//   (total, { playtime, gamesPlayed }) => total + playtime / gamesPlayed,
+//   0
+// );
+// console.log(totalAveragePlaytimePerGame);
+
+// ************Задача 32 - 6
+// Задача. Общий баланс пользователей
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female",
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male",
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female",
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male",
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male",
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female",
+//   },
+// ];
+// // Пиши код ниже этой строки
+// const calculateTotalBalance = (users) =>
+//   users.reduce((total, user) => total + user.balance, 0);
+// // Пиши код выше этой строки
+// console.log(calculateTotalBalance(users));
+
+// ************Задача 33 - 6
+// Задача. Общее количество друзей
 // Пиши код ниже этой строки
+// const getTotalFriendCount = (users) =>
+//   users.reduce((total, user) => total + user.friends.length, 0);
+// // Пиши код выше этой строк
+// console.log(getTotalFriendCount(users));
 
-const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
- return acc=player.playtime/player.gamesPlayed;},0);
+// ************Задача 34 - 6
+// Метод sort()
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский'
+// ];
+// // Пиши код ниже этой строки
+// const ascendingReleaseDates = [...releaseDates].sort();
+// const alphabeticalAuthors = [...authors].sort();
+// console.log(ascendingReleaseDates);
+// console.log(alphabeticalAuthors);
 
+// ************Задача 35 - 6
+// Свой порядок сортировки чисел
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Пиши код ниже этой строки
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// console.log(ascendingReleaseDates);
+// console.log(descendingReleaseDates);
+
+// ************Задача 36 - 6
+// Свой порядок сортировки строк
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский',
+//   'Говард Лавкрафт'
+// ];
+// // Пиши код ниже этой строки
+// const authorsInAlphabetOrder = [...authors].sort((a,b)=>a.localeCompare(b));
+// const authorsInReversedOrder = [...authors].sort((a,b)=>b.localeCompare(a));
+// console.log(authorsInAlphabetOrder);
+// console.log(authorsInReversedOrder);
+
+// ************Задача 37 - 6
+// Сортировка объектов
+// const books = [
+//   { title: "Последнее королевство", author: "Бернард Корнуэлл", rating: 8.38 },
+//   { title: "На берегу спокойных вод", author: "Роберт Шекли", rating: 8.51 },
+//   { title: "Сон смешного человека", author: "Федор Достоевский", rating: 7.75 },
+//   { title: "Красна как кровь", author: "Ли Танит", rating: 7.94 },
+//   { title: "Враг Божий", author: "Бернард Корнуэлл", rating: 8.67 },
+// ];
+// // Пиши код ниже этой строки
+// const sortedByAuthorName = [...books].sort((firstBook, secondBook) =>
+//   firstBook.author.localeCompare(secondBook.author)
+// );
+// const sortedByReversedAuthorName = [...books].sort((firstBook, secondBook) =>
+//   secondBook.author.localeCompare(firstBook.author)
+// );
+// const sortedByAscendingRating = [...books].sort(
+//   (firstBook, secondBook) => firstBook.rating - secondBook.rating
+// );
+// const sortedByDescentingRating = [...books].sort(
+//   (firstBook, secondBook) => secondBook.rating - firstBook.rating
+// );
+// console.log(sortedByAuthorName);
+// console.log(sortedByReversedAuthorName);
+// console.log(sortedByAscendingRating);
+// console.log(sortedByDescentingRating);
+
+// ************Задача 38 - 6
+// Задача. Сортировка по балансу (По ВОЗРАСТАНИЮ)
+// // Пиши код ниже этой строки
+// const sortByAscendingBalance = (users) =>
+// [...users].sort(
+//   (firstUser, secondUser) => firstUser.balance - secondUser.balance
+// );
+// // Пиши код выше этой строки
+// console.log(sortByAscendingBalance(users));
+
+// ************Задача 39 - 6
+// Задача. Сортировка по количеству друзей (По УБЫВАНИЮ)
+// Пиши код ниже этой строки
+// const sortByDescendingFriendCount = (users) =>
+//   [...users].sort(
+//     (firstUser, secondUser) =>
+//       secondUser.friends.length - firstUser.friends.length
+//   );
+// Пиши код выше этой строки
+// console.log(sortByDescendingFriendCount(users));
+
+// ************Задача 40 - 6
+// Задача. Сортировка по имени (в алфавитном порядке.)
+// Пиши код ниже этой строки
+// const sortByName = (users) =>
+//   [...users].sort((firstUser, secondUser) =>
+//     firstUser.name.localeCompare(secondUser.name)
+//   );
+// Пиши код выше этой строки
+// console.log(sortByName(users));
+
+// ************Задача 41 - 6
+// Цепочки методов (чейнинг, chaining)
+// const books = [
+//   { title: "Последнее королевство", author: "Бернард Корнуэлл", rating: 8.38 },
+//   { title: "На берегу спокойных вод", author: "Роберт Шекли", rating: 8.51 },
+//   { title: "Сон смешного человека", author: "Федор Достоевский", rating: 7.75 },
+//   { title: "Красна как кровь", author: "Ли Танит", rating: 8.14 },
+//   { title: "Сны В Ведьмином Доме", author: "Говард Лавкрафт", rating: 8.67 },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Пиши код ниже этой строки
+// const names = [...books]
+//   .filter((book) => book.rating > MIN_BOOK_RATING)
+//   .map((book) => book.author)
+//   .sort((firstAuthor, secondAuthor) => firstAuthor.localeCompare(secondAuthor));
+// console.log(names);
+
+// ************Задача 42 - 6
+// Задача. Пользователи и друзья
+// Пиши код ниже этой строки
+// const getNamesSortedByFriendCount = (users) =>
+//   [...users]
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//     .map((user) => user.name);
+// // Пиши код выше этой строки
+// console.log(getNamesSortedByFriendCount(users));
+
+// ************Задача 43 - 6
+// Задача. Имена друзей
+// Пиши код ниже этой строки
+// const getSortedFriends = (users) =>
+//   [...users]
+//     .flatMap((user) => user.friends)
+//     .filter((friend, index, array) => array.indexOf(friend) === index)
+//     .sort((a, b) => a.localeCompare(b));
+// // Пиши код выше этой строки
+// console.log(getSortedFriends(users));
+
+// ************Задача 44 - 6
+// Задача. Общий баланс
+// // Пиши код ниже этой строки
+// const getTotalBalanceByGender = (users, gender) =>
+//   [...users]
+//     .filter((user) => user.gender === gender)
+//     .reduce((total, user) => total + user.balance, 0);
+// // Пиши код выше этой строки
+// console.log(getTotalBalanceByGender(users));
